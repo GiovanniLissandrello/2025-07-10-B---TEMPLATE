@@ -29,7 +29,7 @@ class View(ft.UserControl):
         self._page.controls.append(self._title)
 
         self._ddcategory = ft.Dropdown(label="Category", width=200)
-
+        self._controller.fillDDCategoria()
         self._dp1 = ft.DatePicker(
             on_change=lambda e: print(f"Giorno selezionato: {self._dp1.value}"),
             on_dismiss=lambda e: print("Data non selezionata")
@@ -54,7 +54,7 @@ class View(ft.UserControl):
         self._btnCreaGrafo = ft.ElevatedButton(text="Crea Grafo", on_click=self._controller.handleCreaGrafo)
 
         self._btnBestProdotti = ft.ElevatedButton(text="Prodotti più venduti",
-                                           on_click=self._controller.handleBestProdotti)
+                                           on_click=self._controller.handleBestProdotti, disabled = True)
 
         row1 = ft.Row([self._ddcategory, self._btnCal1, self._btnCal2, self._btnCreaGrafo, self._btnBestProdotti],
                       alignment=ft.MainAxisAlignment.CENTER)
