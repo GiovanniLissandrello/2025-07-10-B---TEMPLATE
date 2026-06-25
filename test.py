@@ -13,13 +13,13 @@ nodo = dizionario[186]
 nodo2 = dizionario[193]
 
 
-cammino, score = myModel.getPath(nodo, nodo2, 5)
-if len(cammino) != 0 and score != 0:
-    for c in cammino:
-        print(c.product_name)
-    print(score)
-else:
-    print("cammino non trovato")
+# cammino, score = myModel.getPath(nodo, nodo2, 5)
+# if len(cammino) != 0 and score != 0:
+#     for c in cammino:
+#         print(c.product_name)
+#     print(score)
+# else:
+#     print("cammino non trovato")
 #
 # print(score)
 

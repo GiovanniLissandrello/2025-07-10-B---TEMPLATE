@@ -97,7 +97,7 @@ class Model:
 
 
     def getGraphDetails(self):
-        return len(self._graph.nodes), len(self._graph.edges(data=True))
+        return self._graph.number_of_nodes(), self._graph.number_of_edges()
 
     def getDateRange(self):
         return DAO.getDateRange()
